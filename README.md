@@ -1,39 +1,95 @@
-# Blinkit-Sales-
-Analyzed Blinkit retail dataset using SQL to calculate KPIs (sales, ratings, item count) and study performance across product types, fat content, outlet sizes, locations, and types. Derived actionable insights for inventory planning, marketing strategies, and business growth.
+🟢 Blinkit-Sales  Data Analysis using Python and SQL
+📘 Overview
 
---Overview
-This project explores the Blinkit retail dataset using SQL to calculate key performance indicators (KPIs) and derive insights about sales, customer ratings, and outlet performance. The analysis includes overall KPIs as well as product-level and outlet-level breakdowns to better understand business trends.
+This project focuses on analyzing Blinkit’s sales and product data to understand which outlets and items perform the best.
+I used Python for data cleaning, exploration, and visualization, and used SQL to achieve the same analysis through queries.
+The goal was to find meaningful business insights from the data and compare how both tools help in analysis.
 
---Key Analysis Performed
+🎯 Objective
 
-Overall KPIs: Total Sales, Average Sales, Item Count, Average Rating
+The main objective of this project was to clean and analyze Blinkit’s dataset to find patterns and trends in sales, item visibility, and outlet performance.
+I used Python to visualize the data and SQL to cross-check the same results with queries.
 
-Product-Level Analysis: Sales & Ratings by Item Fat Content and Item Type
+🧠 Key Findings
 
-Outlet-Level Analysis:
+Supermarket Type 1 outlets had the highest average sales.
 
-Sales by Outlet Size with percentage contribution
+Items with higher visibility usually had lower average sales.
 
-Sales by Outlet Location Type (Tier 1, 2, 3)
+Low-fat items sold better than regular ones.
 
-Metrics by Outlet Type including Sales, Ratings, Item Count, and Item Visibility
+Outlets established between 2012–2014 showed steady performance growth.
 
----Technical Details
+🧰 Tools and Technologies
 
-SQL aggregate functions used: SUM, AVG, COUNT, CAST
+Python (Jupyter Notebook) → for data cleaning, analysis, and visualization
 
-Applied GROUP BY and ORDER BY for category-level insights
+SQL → for data querying and analytical validation
 
-Calculated both absolute values (total sales) and relative measures (sales percentage)
+Libraries: pandas, matplotlib, seaborn
 
-Queries structured for clarity with business-readable outputs
+Database: SQL.
 
----Insights
+🔍 Steps I Followed
 
-Identified top-performing products and categories
+Data Cleaning in Python
 
-Showed how fat content and item type influence sales and ratings
+Removed missing values and duplicates
 
-Highlighted the contribution of outlet sizes and types to overall revenue
+Standardized column names
 
-Revealed regional differences in sales based on outlet location
+Checked data types and corrected inconsistencies
+
+Exploratory Data Analysis (EDA)
+
+Used bar charts, scatter plots, and heatmaps to visualize trends
+
+Compared sales by outlet type, item fat content, and visibility
+
+SQL Analysis
+
+Wrote SQL queries to calculate average sales by outlet type and item category
+
+Used aggregate functions like AVG(), SUM(), and GROUP BY
+
+Verified that SQL and Python results matched
+
+Result Comparison
+
+The same insights were visible in both Python and SQL outputs
+
+Helped validate that both tools give consistent analytical results
+
+📈 Results and Insights
+
+Python helped with data visualization and easy exploration.
+
+SQL helped with structured data querying and faster numeric analysis.
+
+Using both tools together gave a better understanding of how data analysis works in different environments.
+
+🗂️ Folder Structure
+Blinkit-Data-Analysis/
+│
+├── blinkit_analysis.ipynb   → combined Python + SQL notebook
+├── blinkit_data.csv         → dataset file
+├── README.md                → project details
+└── requirements.txt         → libraries used
+
+🚀 How to Run
+
+Download or clone the project folder from GitHub.
+
+Open the blinkit_analysis.ipynb file in Jupyter Notebook or VS Code.
+
+Run the Python cells for cleaning and visualization.
+
+Run the SQL queries inside the notebook (or directly in SQL Workbench).
+
+🧮 What’s Inside the Notebook
+
+The notebook has two main parts:
+
+Python Section: Cleaning data, creating graphs, and finding trends.
+
+SQL Section: Writing queries to find the same results using SQL commands.
